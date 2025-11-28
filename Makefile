@@ -6,31 +6,43 @@ build:
 	go build -o bin/shantilly cmd/shantilly/main.go
 	@echo "✅ Build complete: bin/shantilly"
 
-# Cross-platform builds
+# Cross-platform build
+.PHONY: build-all
 build-all:
 	@echo "Building for all platforms..."
 	@mkdir -p bin
-	
-	# Linux AMD64
-	GOOS=linux GOARCH=amd64 go build -o bin/shantilly-linux-amd64 cmd/shantilly/main.go
-	@echo "✅ Linux AMD64: bin/shantilly-linux-amd64"
-	
-	# Linux ARM64
-	GOOS=linux GOARCH=arm64 go build -o bin/shantilly-linux-arm64 cmd/shantilly/main.go
-	@echo "✅ Linux ARM64: bin/shantilly-linux-arm64"
-	
-	# macOS AMD64
-	GOOS=darwin GOARCH=amd64 go build -o bin/shantilly-darwin-amd64 cmd/shantilly/main.go
-	@echo "✅ macOS AMD64: bin/shantilly-darwin-amd64"
-	
-	# macOS ARM64 (Apple Silicon)
-	GOOS=darwin GOARCH=arm64 go build -o bin/shantilly-darwin-arm64 cmd/shantilly/main.go
-	@echo "✅ macOS ARM64: bin/shantilly-darwin-arm64"
-	
-	# Windows AMD64
-	GOOS=windows GOARCH=amd64 go build -o bin/shantilly-windows-amd64.exe cmd/shantilly/main.go
-	@echo "✅ Windows AMD64: bin/shantilly-windows-amd64.exe"
-	
+
+	# Linux
+	GOOS=linux GOARCH=amd64 go build -o bin/shantilly-linux-amd64 cmd/shantilly/main.go cmd/shantilly/bubbletea.go cmd/shantilly/theme.go cmd/shantilly/plugin.go
+	GOOS=linux GOARCH=arm64 go build -o bin/shantilly-linux-arm64 cmd/shantilly/main.go cmd/shantilly/bubbletea.go cmd/shantilly/theme.go cmd/shantilly/plugin.go
+
+	# macOS
+	GOOS=darwin GOARCH=amd64 go build -o bin/shantilly-darwin-amd64 cmd/shantilly/main.go cmd/shantilly/bubbletea.go cmd/shantilly/theme.go cmd/shantilly/plugin.go
+	GOOS=darwin GOARCH=arm64 go build -o bin/shantilly-darwin-arm64 cmd/shantilly/main.go cmd/shantilly/bubbletea.go cmd/shantilly/theme.go cmd/shantilly/plugin.go
+
+	# Windows
+	GOOS=windows GOARCH=amd64 go build -o bin/shantilly-windows-amd64.exe cmd/shantilly/main.go cmd/shantilly/bubbletea.go cmd/shantilly/theme.go cmd/shantilly/plugin.go
+	GOOS=windows GOARCH=arm64 go build -o bin/shantilly-windows-arm64.exe cmd/shantilly/main.go cmd/shantilly/bubbletea.go cmd/shantilly/theme.go cmd/shantilly/plugin.go
+
+	@echo "Cross-platform build complete!"
+	@ls -la bin/
+
+# Package for distribution
+.PHONY: package
+package: build-all
+	@echo "Creating distribution packages..."
+	@mkdir -p dist
+
+	# Create tar.gz packages
+	cd bin && tar -czf ../dist/shantilly-linux-amd64.tar.gz shantilly-linux-amd64
+	cd bin && tar -czf ../dist/shantilly-linux-arm64.tar.gz shantilly-linux-arm64
+	cd bin && tar -czf ../dist/shantilly-darwin-amd64.tar.gz shantilly-darwin-amd64
+	cd bin && tar -czf ../dist/shantilly-darwin-arm64.tar.gz shantilly-darwin-arm64
+	cd bin && zip ../dist/shantilly-windows-amd64.zip shantilly-windows-amd64.exe
+	cd bin && zip ../dist/shantilly-windows-arm64.zip shantilly-windows-arm64.exe
+
+	@echo "Packages created in dist/"
+	@ls -la dist/
 	@echo "🎉 All builds complete!"
 
 # Run tests

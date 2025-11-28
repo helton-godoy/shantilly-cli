@@ -22,6 +22,8 @@ func main() {
 	rootCmd.AddCommand(createSelectCmd())
 	rootCmd.AddCommand(createConfirmCmd())
 	rootCmd.AddCommand(createBubbleTeaCmd())
+	rootCmd.AddCommand(createThemeCmd())
+	rootCmd.AddCommand(createPluginCmd())
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
