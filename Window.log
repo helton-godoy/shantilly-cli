@@ -1,0 +1,64 @@
+2025-11-28 14:07:31.257 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.276 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vsliveshare.vsliveshare' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.276 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.276 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'github.vscode-pull-request-github' wants API proposal 'fileComments' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.277 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatVariableResolver' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.277 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.277 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.gather' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.277 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-pylance' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.278 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.278 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-toolsai.jupyter' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.278 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'dbaeumer.vscode-eslint' wants API proposal 'notebookCellExecutionState' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.278 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-azuretools.vscode-azure-github-copilot' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.278 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.cpptools' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.279 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'redhat.java' wants API proposal 'documentPaste' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.279 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'vscjava.vscode-java-pack' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.665 [info] [Window] Started local extension host with pid 796189.
+2025-11-28 14:07:31.882 [error] [Window] Extension 'google.antigravity' wants API proposal 'cloudCodeUrl' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-11-28 14:07:31.894 [error] [Window] [vscode.git]: property `title` is mandatory and must be of type `string` or `object`
+2025-11-28 14:07:31.894 [error] [Window] [vscode.git]: property `title` is mandatory and must be of type `string` or `object`
+2025-11-28 14:07:31.896 [error] [Window] [google.antigravity]: Menu item references a command `antigravity.importAntigravitySettings` which is not defined in the 'commands' section.
+2025-11-28 14:07:31.896 [error] [Window] [google.antigravity]: Menu item references a command `antigravity.importAntigravityExtensions` which is not defined in the 'commands' section.
+2025-11-28 14:07:32.564 [error] [Window] [Extension Host] Failed to update user status Error: LanguageServerClient must be initialized first!
+	at B.getInstance (/usr/share/antigravity/resources/app/extensions/antigravity/dist/extension.js:2:214140)
+	at a.updateUserStatus (/usr/share/antigravity/resources/app/extensions/antigravity/dist/extension.js:2:1235905)
+	at a.restartUpdateLoop (/usr/share/antigravity/resources/app/extensions/antigravity/dist/extension.js:2:1236396)
+	at t.activate (/usr/share/antigravity/resources/app/extensions/antigravity/dist/extension.js:2:163659)
+	at async qT.n (file:///usr/share/antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:14106)
+	at async qT.m (file:///usr/share/antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:14069)
+	at async qT.l (file:///usr/share/antigravity/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:113:13525)
+2025-11-28 14:07:34.360 [info] [Window] [perf] Render performance baseline is 18ms
+2025-11-28 14:07:43.211 [error] [Network] #10: https://open-vsx.org/vscode/gallery/extensionquery - error POST Canceled
+2025-11-28 14:07:47.487 [error] [Network] #14: https://open-vsx.org/vscode/asset/MS-CEINTL/vscode-language-pack-pt-BR/1.106.0/Microsoft.VisualStudio.Code.Manifest?targetPlatform=universal - error GET Failed to fetch
+2025-11-28 14:07:47.488 [error] [Network] #15: https://open-vsx.org/vscode/asset/MS-CEINTL/vscode-language-pack-pt-BR/1.106.0/Microsoft.VisualStudio.Code.Manifest?targetPlatform=universal - error GET Failed to fetch
+2025-11-28 14:07:47.733 [error] [Network] #16: https://open-vsx.org/vscode/asset/MS-CEINTL/vscode-language-pack-pt-BR/1.106.0/Microsoft.VisualStudio.Code.Manifest?targetPlatform=universal - error GET Failed to fetch
+2025-11-28 14:07:47.740 [error] [Window] TypeError: Failed to fetch
+    at Elc (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6634:13218)
+    at vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6634:14823
+    at gGn.c (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:3318:52476)
+    at gGn.request (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6634:14815)
+    at fEn.Q (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:4109:308)
+    at async fEn.getManifest (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:4107:39746)
+    at async $Gn.installFromGallery (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6639:6550)
+    at async vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:5246:39377
+2025-11-28 14:07:47.741 [error] [Window] Failed to fetch: TypeError: Failed to fetch
+    at Elc (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6634:13218)
+    at vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6634:14823
+    at gGn.c (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:3318:52476)
+    at gGn.request (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6634:14815)
+    at fEn.Q (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:4109:308)
+    at async fEn.getManifest (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:4107:39746)
+    at async $Gn.installFromGallery (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6639:6550)
+    at async vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:5246:39377
+2025-11-28 14:07:47.936 [error] [Window] TypeError: Failed to fetch
+    at Elc (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6634:13218)
+    at vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6634:14823
+    at gGn.c (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:3318:52476)
+    at gGn.request (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:6634:14815)
+    at fEn.Q (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:4109:308)
+    at async fEn.getManifest (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:4107:39746)
+    at async Dme.vb (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:5174:7802)
+    at async Dme.setInput (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:5174:6202)
+    at async Kyn.S (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:3457:60383)
+    at async Kyn.L (vscode-file://vscode-app/usr/share/antigravity/resources/app/out/vs/workbench/workbench.desktop.main.js:3457:58938)
+2025-11-28 14:07:47.936 [error] [Network] #17: https://open-vsx.org/vscode/asset/MS-CEINTL/vscode-language-pack-pt-BR/1.106.0/Microsoft.VisualStudio.Code.Manifest?targetPlatform=universal - error GET Failed to fetch

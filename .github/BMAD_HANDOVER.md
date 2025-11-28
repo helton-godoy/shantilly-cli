@@ -1,8 +1,10 @@
-# BMAD Handover Protocol
+# BMAD Handover Protocol - Shantilly-CLI Project
 
-**Version:** 1.0.0  
-**Last Updated:** 2025-11-21T03:36:57-04:00  
-**Framework:** BMAD-GitHub Native Full Cycle
+**Version:** 2.0.0
+**Last Updated:** 2025-11-28T17:38:00-04:00
+**Framework:** BMAD-GitHub-Native-Full-Cycle
+**Project:** shantilly-cli (Golang TUI with Charmbracelet)
+**Repository:** https://github.com/helton-godoy/shantilly-cli
 
 ---
 
@@ -10,19 +12,49 @@
 
 ### Active Persona
 
-**[DEV]**
+**[PM]**
 
 ### Current Phase
 
-**Phase 5: Validation Final ("Test Flight")** 🔄 IN PROGRESS
+**Planning** 🔄 IN PROGRESS
 
 ### Project Status
 
-🔄 **VALIDATING** - Implementing Health Check API
+🚧 **DEVELOPMENT** - Implementing Shantilly-CLI TUI in Golang + Charmbracelet
 
 ---
 
+## Project Context - Shantilly-CLI
+
+### Issue #1: Implement Shantilly-CLI TUI in Golang + Charmbracelet
+- **Status:** Active
+- **Created:** 2025-11-28T09:40:30Z
+- **Assignee:** helton-godoy
+- **Labels:** bmad, golang, tui, charmbracelet
+- **Objective:** Create modern TUI alternative to dialog/whiptail using Golang + Charmbracelet
+
+### Workflow Progress
+- ✅ **BMAD Framework v2.0.0 Installed**
+- ✅ **GitHub Integration Validated**
+- ✅ **Issue #9 Created (PM Planning)**
+- 🔄 **Current Phase:** PM Analysis → Architecture Design
+- 📋 **Next:** Architect persona to design Go architecture
+
 ## Handover History
+
+### [STEP-001] 2025-11-28T17:38:00-04:00
+- **From:** System Init
+- **To:** [PM]
+- **Action:** Initialize Shantilly-CLI BMAD workflow for Issue #1
+- **Artifacts Created:**
+  - Issue #9: Planning analysis and work breakdown
+  - Updated BMAD_HANDOVER.md for shantilly-cli project
+  - BMAD Orchestrator created
+  - Base persona SHA fix applied
+- **Repository:** https://github.com/helton-godoy/shantilly-cli
+- **Commit:** `[ORCHESTRATOR] [STEP-023] Final validation - BMAD Framework fully operational with GitHub integration`
+- **Next Steps:** Execute PM → Architect → Developer workflow
+- **Blockers:** None
 
 ### [STEP-001] 2025-11-21T04:19:30-04:00
 

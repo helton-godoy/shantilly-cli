@@ -23,6 +23,7 @@
     "bmad:docs": "node scripts/bmad/agent-doc-enhanced.js",
     "bmad:docs:original": "node scripts/bmad/agent-doc.js",
     "bmad:search": "node scripts/search-memory.js",
+    "bmad:orchestrator": "node scripts/bmad/bmad-orchestrator.js",
     "status": "node -e \"console.log('Enhanced BMAD Framework v2.0.0 - Ready for autonomous development!')\"",
     "validate": "npm run lint && npm run test",
     "clean": "rm -rf .github/logs/ .github/reports/ .github/metrics/ node_modules/.cache/"

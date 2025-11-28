@@ -1,2 +1,10 @@
 [2025-11-28T14:42:48.551Z] [INFO] Workflow bmad-1764340968551-72ztb started for Issue #7
 [2025-11-28T14:42:48.864Z] [ERROR] Phase pm failed: Bad credentials - https://docs.github.com/rest
+[2025-11-28T14:45:07.745Z] [INFO] Workflow bmad-1764341107745-qofv0 started for Issue #7
+[2025-11-28T14:45:09.304Z] [ERROR] Phase pm failed: Invalid request.
+
+"sha" wasn't supplied. - https://docs.github.com/rest/repos/contents#create-or-update-file-contents
+[2025-11-28T14:52:18.189Z] [INFO] Workflow bmad-1764341538189-qpz9n started for Issue #1
+[2025-11-28T14:52:19.727Z] [ERROR] Phase pm failed: Invalid request.
+
+"sha" wasn't supplied. - https://docs.github.com/rest/repos/contents#create-or-update-file-contents
