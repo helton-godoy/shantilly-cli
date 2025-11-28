@@ -50,18 +50,14 @@ func createDialogCmd() *cobra.Command {
 				os.Exit(1)
 			}
 
-			if multi {
-				for _, selection := range result {
-					fmt.Println(selection)
-				}
-			} else {
-				fmt.Println(result[0])
+			for _, selection := range result {
+				fmt.Println(selection)
 			}
 		},
 	}
 
 	cmd.Flags().StringVar(&title, "title", "", "Dialog title (required)")
-	cmd.Flags().StringSliceVar(&options, "options", []string{}, "Comma-separated options (required)")
+	cmd.Flags().StringArrayVar(&options, "options", []string{}, "Comma-separated options (required)")
 	cmd.Flags().StringVar(&defaultVal, "default", "", "Default selection")
 	cmd.Flags().BoolVar(&multi, "multi", false, "Allow multiple selections")
 
@@ -96,8 +92,8 @@ func createFormCmd() *cobra.Command {
 	}
 
 	cmd.Flags().StringVar(&title, "title", "", "Form title")
-	cmd.Flags().StringSliceVar(&fields, "fields", []string{}, "Field definitions (required)")
-	cmd.Flags().StringSliceVar(&values, "values", []string{}, "Default values")
+	cmd.Flags().StringArrayVar(&fields, "fields", []string{}, "Field definitions (required)")
+	cmd.Flags().StringArrayVar(&values, "values", []string{}, "Default values")
 
 	return cmd
 }
@@ -124,7 +120,7 @@ func createProgressCmd() *cobra.Command {
 		},
 	}
 
-	cmd.Flags().StringSliceVar(&steps, "steps", []string{}, "Progress steps (required)")
+	cmd.Flags().StringArrayVar(&steps, "steps", []string{}, "Progress steps (required)")
 	cmd.Flags().IntVar(&current, "current", 0, "Current step index")
 
 	return cmd
