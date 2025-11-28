@@ -21,6 +21,7 @@ func main() {
 	rootCmd.AddCommand(createProgressCmd())
 	rootCmd.AddCommand(createSelectCmd())
 	rootCmd.AddCommand(createConfirmCmd())
+	rootCmd.AddCommand(createBubbleTeaCmd())
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %v\n", err)
@@ -44,7 +45,7 @@ func createDialogCmd() *cobra.Command {
 				os.Exit(1)
 			}
 
-			result, err := tui.ShowDialog(title, options, defaultVal, multi)
+			result, err := tui.EnhancedShowDialog(title, options, defaultVal, multi)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 				os.Exit(1)
@@ -79,7 +80,7 @@ func createFormCmd() *cobra.Command {
 				os.Exit(1)
 			}
 
-			result, err := tui.ShowForm(title, fields, values)
+			result, err := tui.EnhancedShowForm(title, fields, values)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 				os.Exit(1)
@@ -112,7 +113,7 @@ func createProgressCmd() *cobra.Command {
 				os.Exit(1)
 			}
 
-			err := tui.ShowProgress(steps, current)
+			err := tui.EnhancedShowProgress(steps, current)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 				os.Exit(1)
@@ -140,7 +141,7 @@ func createSelectCmd() *cobra.Command {
 				path = "."
 			}
 
-			result, err := tui.ShowFileSelector(path, filter, multi)
+			result, err := tui.EnhancedShowFileSelector(path, filter, multi)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 				os.Exit(1)
@@ -173,7 +174,7 @@ func createConfirmCmd() *cobra.Command {
 				os.Exit(1)
 			}
 
-			result, err := tui.ShowConfirm(message, defaultVal)
+			result, err := tui.EnhancedShowConfirm(message, defaultVal)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "Error: %v\n", err)
 				os.Exit(1)
