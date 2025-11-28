@@ -1,0 +1,2 @@
+[2025-11-28T14:42:48.551Z] [INFO] Workflow bmad-1764340968551-72ztb started for Issue #7
+[2025-11-28T14:42:48.864Z] [ERROR] Phase pm failed: Bad credentials - https://docs.github.com/rest

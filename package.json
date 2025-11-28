@@ -13,11 +13,19 @@
     "lint:fix": "eslint src/ scripts/ personas/ tests/ --fix",
     "format": "prettier --write \"src/**/*.js\" \"scripts/**/*.js\" \"personas/**/*.js\" \"tests/**/*.js\"",
     "format:check": "prettier --check \"src/**/*.js\" \"scripts/**/*.js\" \"personas/**/*.js\" \"tests/**/*.js\"",
-    "setup": "./bmad/bin/setup-tools.sh",
+    "setup": "npm install && chmod +x scripts/bmad/*.js && chmod +x scripts/*.js",
     "bmad:gatekeeper": "node scripts/bmad/bmad-gatekeeper.js",
     "bmad:doc": "node scripts/bmad/agent-doc.js",
-    "bmad:workflow": "node scripts/bmad/bmad-workflow.js",
-    "bmad:test": "npm run test && npm run lint && npm run bmad:gatekeeper"
+    "bmad:workflow": "node scripts/bmad/bmad-workflow-enhanced.js",
+    "bmad:test": "npm run test && npm run lint && npm run bmad:gatekeeper",
+    "bmad:workflow:original": "node scripts/bmad/bmad-workflow.js",
+    "bmad:workflow:single": "node scripts/bmad/bmad-workflow-enhanced.js",
+    "bmad:docs": "node scripts/bmad/agent-doc-enhanced.js",
+    "bmad:docs:original": "node scripts/bmad/agent-doc.js",
+    "bmad:search": "node scripts/search-memory.js",
+    "status": "node -e \"console.log('Enhanced BMAD Framework v2.0.0 - Ready for autonomous development!')\"",
+    "validate": "npm run lint && npm run test",
+    "clean": "rm -rf .github/logs/ .github/reports/ .github/metrics/ node_modules/.cache/"
   },
   "keywords": [
     "bmad",
@@ -55,5 +63,44 @@
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
+  },
+  "bmad": {
+    "version": "2.0.0",
+    "features": [
+      "enhanced-personas",
+      "advanced-workflow",
+      "comprehensive-documentation",
+      "quality-metrics",
+      "error-handling",
+      "performance-monitoring"
+    ],
+    "personas": [
+      "project-manager",
+      "architect",
+      "developer-enhanced",
+      "qa",
+      "security",
+      "devops",
+      "release-manager"
+    ],
+    "workflows": {
+      "full-cycle": "scripts/bmad/bmad-workflow-enhanced.js",
+      "single-persona": "scripts/bmad/bmad-workflow-enhanced.js [persona]",
+      "documentation": "scripts/bmad/agent-doc-enhanced.js"
+    },
+    "documentation": {
+      "auto-generate": true,
+      "semantic-analysis": true,
+      "output-dir": "docs/architecture",
+      "formats": [
+        "markdown",
+        "json"
+      ]
+    },
+    "quality": {
+      "test-coverage": ">=80%",
+      "eslint-rules": "recommended",
+      "performance-threshold": "200ms"
+    }
   }
 }
