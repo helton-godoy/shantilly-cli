@@ -1,54 +1,704 @@
-# Work Plan - [V2.0] Validação de Autonomia e Análise Evolutiva
+# Work Plan - [Architect] Implementation: [V2.0] Validação de Autonomia e Análise Evolutiva
 
 ## Issue Analysis
-- **Number**: #53
-- **Title**: [V2.0] Validação de Autonomia e Análise Evolutiva
-- **Created**: 2025-11-29T17:45:32Z
+- **Number**: #59
+- **Title**: [Architect] Implementation: [V2.0] Validação de Autonomia e Análise Evolutiva
+- **Created**: 2025-11-29T18:23:27Z
 - **Assignee**: Unassigned
 
 ## Requirements
-# 🚀 Plano de Validação e Evolução V2.0
+**Persona:** Architect Agent
 
-## 🎯 Objetivo
-Executar uma análise abrangente do estado atual do `shantilly-cli` e implementar melhorias incrementais utilizando o framework BMAD V2.0.
+## Planning Issue
+#53: [V2.0] Validação de Autonomia e Análise Evolutiva
 
-## 📋 Estrutura da Tarefa (Structured Task)
+## Architecture Design
+# System Architecture Design
 
-### 1. Análise Situacional (Current State Analysis)
-- [ ] **Auditoria de Código**: Mapear estrutura atual, dependências e dívida técnica.
-- [ ] **Auditoria de Processos**: Avaliar workflows de CI/CD e automação existentes.
-- [ ] **Auditoria de Issues**: Revisar issues #47-#52 para extrair requisitos pendentes e consolidar.
+## Overview
+Architecture design for: [V2.0] Validação de Autonomia e Análise Evolutiva
 
-### 2. Planejamento Granular (Incremental Delivery)
-As entregas serão divididas em Milestones testáveis e reversíveis.
+## Requirements Analysis
+Based on planning issue #53
 
-#### Milestone 1: Fundação & Higiene
-- **Foco**: Organização de pastas, padronização de configs (ESLint, Prettier), atualização de deps.
-- **Dependências**: Nenhuma.
-- **Rollback**: `git revert` simples.
-- **Risco**: Baixo.
+## Context & Technology Stack
+- **Language:** Golang 1.21+
+- **TUI Framework:** Charmbracelet ecosystem
+- **Distribution:** Single binary executable
+- **Cross-platform:** Linux, macOS, Windows
 
-#### Milestone 2: Arquitetura & Core
-- **Foco**: Implementação de padrões de design definidos pelo Architect V2.
-- **Dependências**: Milestone 1.
-- **Rollback**: Reverter para tag `v1.0-backup`.
-- **Risco**: Médio (Refatoração).
+## Existing Architecture Map
+# Enhanced System Map
 
-#### Milestone 3: Funcionalidades & Expansão
-- **Foco**: Novas features identificadas na análise.
-- **Dependências**: Milestone 2.
-- **Risco**: Baixo (Código novo).
+## Semantic Context
+### Architect Persona - System design and technical decisions
+- **File:** `personas/architect.js`
+- **Line:** 1
 
-### 3. Gestão de Risco & Rollback
-- **Estratégia de Branching**: Cada Milestone terá sua própria branch `feat/milestone-X`.
-- **Validação**: Cada PR deve passar no CI (Lint + Testes) antes do merge.
-- **Backup**: Tag `pre-v2-migration` será criada antes de qualquer mudança crítica.
+### Design system architecture based on requirements
+- **File:** `personas/architect.js`
+- **Line:** 13
 
-### 4. Critérios de Aceite (DoD)
-- [ ] Análise completa gerada em `docs/architecture/SYSTEM_MAP.md`.
-- [ ] Plano de implementação aprovado pelo usuário.
-- [ ] Issues antigas consolidadas e fechadas.
+### Create comprehensive architecture design
+- **File:** `personas/architect.js`
+- **Line:** 55
 
+### Create implementation issue for developers
+- **File:** `personas/architect.js`
+- **Line:** 170
+
+### Enhanced Base class for all BMAD personas with advanced features
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 1
+
+### Load project context from files with enhanced error handling
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 26
+
+### Safe file reading with fallback
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 49
+
+### Enhanced logging with timestamps and metrics
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 60
+
+### Append to log file
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 72
+
+### Create GitHub issue with enhanced metadata
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 89
+
+### Enhanced commit with automatic metrics tracking
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 112
+
+### Execute shell command with error handling
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 138
+
+### Get next step ID for commits
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 154
+
+### Update handover state
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 162
+
+### Generate handover content
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 176
+
+### Validate prerequisites for persona execution
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 214
+
+### Get persona execution summary
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 228
+
+### Base class for all BMAD personas
+- **File:** `personas/base-persona.js`
+- **Line:** 1
+
+### Load project context from files
+- **File:** `personas/base-persona.js`
+- **Line:** 19
+
+### Update active context with current work
+- **File:** `personas/base-persona.js`
+- **Line:** 33
+
+### Create micro-commit with tracking ID
+- **File:** `personas/base-persona.js`
+- **Line:** 56
+
+### Create GitHub issue for task tracking
+- **File:** `personas/base-persona.js`
+- **Line:** 85
+
+### Abstract method for persona execution
+- **File:** `personas/base-persona.js`
+- **Line:** 106
+
+### Log persona activity
+- **File:** `personas/base-persona.js`
+- **Line:** 113
+
+### Enhanced Developer Persona with advanced code generation and validation
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 1
+
+### Detect project tech stack from configuration files
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 21
+
+### Enhanced implementation with code quality checks
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 64
+
+### Parse implementation requirements from issue body
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 121
+
+### Generate detailed implementation plan
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 155
+
+### Generate setup tasks based on requirements
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 187
+
+### Generate core implementation tasks
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 224
+
+### Generate testing tasks
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 241
+
+### Generate documentation tasks
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 258
+
+### Execute implementation phase
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 276
+
+### Execute individual task
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 299
+
+### Create file based on tech stack
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 328
+
+### Generate file content based on path and tech stack
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 338
+
+### Implement feature based on requirements
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 380
+
+### Generate feature code
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 394
+
+### Create test file
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 436
+
+### Generate test code
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 450
+
+### Create documentation
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 482
+
+### Generate documentation content
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 493
+
+### Run quality checks on implemented code
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 551
+
+### Generate implementation report
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 582
+
+### Developer Persona - Code implementation and feature development
+- **File:** `personas/developer.js`
+- **Line:** 1
+
+### Implement features based on architecture design
+- **File:** `personas/developer.js`
+- **Line:** 15
+
+### Implement core application structure
+- **File:** `personas/developer.js`
+- **Line:** 82
+
+### Implement API endpoints
+- **File:** `personas/developer.js`
+- **Line:** 98
+
+### Implement GitHub integration
+- **File:** `personas/developer.js`
+- **Line:** 106
+
+### Create test suite
+- **File:** `personas/developer.js`
+- **Line:** 114
+
+### Get Express app configuration
+- **File:** `personas/developer.js`
+- **Line:** 122
+
+### Get configuration module
+- **File:** `personas/developer.js`
+- **Line:** 175
+
+### Get GitHub service implementation
+- **File:** `personas/developer.js`
+- **Line:** 209
+
+### Get persona controller implementation
+- **File:** `personas/developer.js`
+- **Line:** 307
+
+### Get integration tests
+- **File:** `personas/developer.js`
+- **Line:** 376
+
+### Create QA review issue
+- **File:** `personas/developer.js`
+- **Line:** 420
+
+### DevOps Persona - Infrastructure and deployment preparation
+- **File:** `personas/devops.js`
+- **Line:** 1
+
+### Project Manager Persona - Planning and requirements definition
+- **File:** `personas/project-manager.js`
+- **Line:** 1
+
+### Analyze GitHub issue and create work plan
+- **File:** `personas/project-manager.js`
+- **Line:** 13
+
+### Create structured work plan from issue
+- **File:** `personas/project-manager.js`
+- **Line:** 56
+
+### Create architecture planning issue
+- **File:** `personas/project-manager.js`
+- **Line:** 105
+
+### QA Persona - Testing and quality assurance
+- **File:** `personas/qa.js`
+- **Line:** 1
+
+### Release Manager Persona - Version management and release coordination
+- **File:** `personas/release-manager.js`
+- **Line:** 1
+
+### Security Persona - Security analysis and compliance
+- **File:** `personas/security.js`
+- **Line:** 1
+
+### Enhanced Agent Documentation Generator with advanced semantic analysis
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 1
+
+### Extract semantic tags from all files in the codebase
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 41
+
+### Get all code files from the project
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 72
+
+### Extract tags from a single file
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 101
+
+### Get line number from character index
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 154
+
+### Generate comprehensive documentation
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 162
+
+### Generate project overview
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 199
+
+### Generate architecture documentation
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 226
+
+### Generate persona documentation
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 255
+
+### Generate workflow documentation
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 282
+
+### Generate component documentation
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 309
+
+### Generate API documentation
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 336
+
+### Generate security documentation
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 363
+
+### Generate performance documentation
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 387
+
+### Generate enhanced system map
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 411
+
+### Format semantic tags for display
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 455
+
+### Helper methods for content extraction
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 470
+
+### Save documentation to file
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 706
+
+### Get documentation metrics
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 722
+
+### Run complete documentation generation
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 729
+
+### Enhanced BMAD Workflow Orchestrator with advanced features
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 2
+
+### Setup required directories
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 54
+
+### Execute complete enhanced BMAD workflow
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 66
+
+### Execute individual workflow phase
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 117
+
+### Generate comprehensive workflow report
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 172
+
+### Generate markdown workflow report
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 204
+
+### Generate error report
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 240
+
+### Get current phase based on completed phases
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 265
+
+### Generate unique workflow ID
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 274
+
+### Log workflow events
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 283
+
+### Delay between API calls
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 298
+
+### Get workflow status
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 305
+
+### Execute single persona (for testing/debugging)
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 318
+
+### BMAD Workflow Orchestrator
+- **File:** `scripts/bmad/bmad-workflow.js`
+- **Line:** 2
+
+### Execute complete BMAD workflow
+- **File:** `scripts/bmad/bmad-workflow.js`
+- **Line:** 44
+
+### Get latest issue with specific label
+- **File:** `scripts/bmad/bmad-workflow.js`
+- **Line:** 128
+
+### Generate workflow completion report
+- **File:** `scripts/bmad/bmad-workflow.js`
+- **Line:** 153
+
+
+## System Invariants
+### Architect must create technical specifications and system design
+- **File:** `personas/architect.js`
+- **Line:** 1
+
+### All personas must extend this enhanced base class
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 1
+
+### All personas must extend this base class
+- **File:** `personas/base-persona.js`
+- **Line:** 1
+
+### Developer must implement according to architecture specifications with quality checks
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 1
+
+### Developer must implement according to architecture specifications
+- **File:** `personas/developer.js`
+- **Line:** 1
+
+### DevOps must prepare infrastructure and deployment pipeline
+- **File:** `personas/devops.js`
+- **Line:** 1
+
+### PM must analyze requirements and create work plans
+- **File:** `personas/project-manager.js`
+- **Line:** 1
+
+### QA must validate all implementations before release
+- **File:** `personas/qa.js`
+- **Line:** 1
+
+### Release Manager must coordinate final release and version management
+- **File:** `personas/release-manager.js`
+- **Line:** 1
+
+### Security must validate all security aspects before deployment
+- **File:** `personas/security.js`
+- **Line:** 1
+
+### Must extract and document all semantic tags from codebase
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 1
+
+### Must execute all personas in sequence with enhanced coordination
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 2
+
+### Must execute all personas in sequence
+- **File:** `scripts/bmad/bmad-workflow.js`
+- **Line:** 2
+
+
+## Component Connections
+### Architect connects to PM requirements and provides implementation guidance
+- **File:** `personas/architect.js`
+- **Line:** 1
+
+### This class connects to GitHub API, context management, and advanced logging
+- **File:** `personas/base-persona-enhanced.js`
+- **Line:** 1
+
+### This class connects to GitHub API and context management
+- **File:** `personas/base-persona.js`
+- **Line:** 1
+
+### Developer connects to architecture design and provides production-ready code
+- **File:** `personas/developer-enhanced.js`
+- **Line:** 1
+
+### Developer connects to architecture design and provides working code
+- **File:** `personas/developer.js`
+- **Line:** 1
+
+### DevOps connects to security approval and provides deployment readiness
+- **File:** `personas/devops.js`
+- **Line:** 1
+
+### PM connects to GitHub Issues and creates structured work items
+- **File:** `personas/project-manager.js`
+- **Line:** 1
+
+### QA connects to developer implementation and provides quality validation
+- **File:** `personas/qa.js`
+- **Line:** 1
+
+### Release Manager connects to DevOps preparation and manages final release
+- **File:** `personas/release-manager.js`
+- **Line:** 1
+
+### Security connects to QA results and provides security validation
+- **File:** `personas/security.js`
+- **Line:** 1
+
+### Connects code analysis to comprehensive documentation generation
+- **File:** `scripts/bmad/agent-doc-enhanced.js`
+- **Line:** 1
+
+### Coordinates all personas, GitHub integration, and advanced monitoring
+- **File:** `scripts/bmad/bmad-workflow-enhanced.js`
+- **Line:** 2
+
+### Coordinates all personas and GitHub integration
+- **File:** `scripts/bmad/bmad-workflow.js`
+- **Line:** 2
+
+
+## Security Considerations
+No ai-security tags found.
+
+
+## Performance Notes
+No ai-performance tags found.
+
+
+## Known Issues
+No ai-bug tags found.
+
+
+## TODO Items
+No ai-todo tags found.
+
+
+## Deprecated Features
+No ai-deprecated tags found.
+
+
+## Documentation Metrics
+- Files Processed: 42
+- Tags Extracted: 128
+- Documentation Generated: 0
+- Errors: 0
+
+---
+*Generated by Enhanced BMAD Agent Documentation*
+*Last Updated: 2025-11-28T14:42:09.831Z
+
+## System Components
+
+### 1. Core Application Layer
+- **Runtime/Language**: Derived from Product Context
+- **Framework**: Derived from Product Context
+- **Architecture Pattern**: Modular/Layered
+
+### 2. Business Logic Layer
+- **Services**: Domain logic isolation
+- **Handlers/Controllers**: Input processing
+- **Utilities**: Shared helper functions
+
+### 3. Data Layer
+- **Storage**: As defined in requirements (File/DB)
+- **Persistence**: Data access patterns
+- **Backup**: Version control / Snapshots
+
+### 4. Integration Layer
+- **External APIs**: GitHub, etc.
+- **Events**: Webhooks / Signals
+
+## Security Architecture
+
+### Authentication & Authorization
+- Secure credential management
+- Role-based access (if applicable)
+
+### Data Protection
+- Input validation (Critical)
+- Secure storage of sensitive data
+
+## Performance Considerations
+
+### Efficiency
+- Resource usage optimization
+- Startup time minimization
+
+### Monitoring
+- Logging strategy
+- Performance metrics tracking
+
+## Deployment Architecture
+
+### Environment Setup
+- Development: Local environment
+- Testing: CI Pipeline
+- Production: Build artifacts
+
+### CI/CD Pipeline
+- Automated testing
+- Linting & Quality checks
+- Automated release process
+
+## Implementation Guidelines
+
+### Code Structure
+(Adapt to target language conventions)
+```
+src/ or cmd/
+├── core/           # Core logic
+├── api/            # Interfaces
+├── data/           # Data access
+└── config/         # Configuration
+```
+
+### Development Standards
+- Follow BMAD micro-commit pattern
+- Maintain high test coverage
+- Use AgentDoc tags for documentation
+- Implement security best practices
+
+## Risk Assessment
+- **Security**: Mitigate with validation and secure coding
+- **Performance**: Optimize critical paths
+- **Maintainability**: Enforce clean code principles
+
+---
+*Designed by Architect Agent on 2025-11-29T18:23:26.721Z*
+
+## Implementation Tasks
+
+### Phase 1: Core Setup
+- [ ] Initialize project structure
+- [ ] Set up core application framework
+- [ ] Configure basic configuration
+- [ ] Implement core utilities
+
+### Phase 2: Core Features
+- [ ] Implement primary business logic
+- [ ] Add data layer implementation
+- [ ] Implement input/output handling
+- [ ] Add logging and monitoring
+
+### Phase 3: Integration
+- [ ] External API integration (if needed)
+- [ ] Event handling
+- [ ] State management
+
+### Phase 4: Testing & Security
+- [ ] Unit tests
+- [ ] Integration tests
+- [ ] Security review
+- [ ] Performance testing
+
+## Technical Requirements
+- Follow the architecture design exactly
+- Implement all security measures
+- Maintain code quality standards
+- Add comprehensive tests
+
+## Deliverables
+- Working implementation
+- Test suite (>80% coverage)
+- Security documentation
+- Deployment guide
+
+## Next Steps
+@helton-godoy/developer Please implement according to this design.
+
+---
+*Created by Architect Agent*
 
 ## Work Breakdown
 1. **Architecture Design** - Define technical approach
@@ -67,7 +717,7 @@ As entregas serão divididas em Milestones testáveis e reversíveis.
 - [ ] Deployed successfully
 
 ## Timeline
-- **Start**: 2025-11-29T18:22:06.942Z
+- **Start**: 2025-11-29T18:32:22.428Z
 - **Architecture**: 1-2 hours
 - **Implementation**: 4-8 hours
 - **Testing**: 2-4 hours
@@ -79,4 +729,4 @@ As entregas serão divididas em Milestones testáveis e reversíveis.
 - External services (if any)
 
 ---
-*Generated by PM Agent on 2025-11-29T18:22:06.943Z*
+*Generated by PM Agent on 2025-11-29T18:32:22.428Z*
